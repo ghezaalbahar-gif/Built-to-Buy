@@ -186,3 +186,70 @@ nav ul a{
     text-align: center;
     
 }
+
+/* Phones: the product rows, the blog card, the FAQ list and the wordmark each
+   carry a hard pixel width, so the page cannot shrink below ~1300px. None of
+   this is reachable above 640px. */
+@media (max-width: 640px) {
+    body {
+        padding: 16px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    header {
+        position: sticky;
+        width: auto;
+        margin-inline: -16px;
+        padding: 8px 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        margin: 0;
+    }
+    .flex,
+    .flex3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .flex2 {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .card2 {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    #card {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        gap: 14px;
+        padding: 14px;
+    }
+    #q {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 0;
+    }
+    #flex0 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #font {
+        font-size: 34px;
+    }
+}
